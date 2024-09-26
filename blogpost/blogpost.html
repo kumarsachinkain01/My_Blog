@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog_Post</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./blogpost.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span>MY</span> BLOG</h1>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <a href="../index.html"><abbr title="HOME"><li><i class="fa-solid fa-house"></i> HOME</li></abbr></a>
+            <a href="../about/about.html"><abbr title="ABOUT"><li><i class="fas fa-info-circle"></i> ABOUT</li></abbr></a>
+            <a href="../contact/contact.html"><abbr title="CONTACT"><li><i class="fas fa-envelope"></i> CONTACT</li></abbr></a>
+            <a href="./blogpost.html"><abbr title="BLOG"><li><i class="fas fa-blog"></i> BLOG POST</li></abbr></a>
+            <a href=""><abbr title="PRODUCT"><li><i class="fas fa-box-open"></i> PROJECT</li></abbr></a>
+            <a href="../login/login.html"><abbr title="LOGIN"><li><i class="fas fa-sign-in-alt"></i> LOGIN</li></abbr></a>
+            <a href="../user/user.html"><abbr title="USER"><li><i class="fa-solid fa-users"></i> USER</li></abbr></a>
+        </ul>
+    </header> 
+     <div class="blog-post">
+        <h2>BLOG POST</h2>
+     </div>
+     
+     <form>
+        <fieldset>
+            
+        <fieldset>
+        
+            <legend><b>Blog Details</b></legend>
+            <label for="title">Title <b>:-</b></label>
+            <input type="text" id="title" placeholder="Enter your blog title" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Author Information</b></legend>
+            <label for="name">Name <b>:-</b></label>
+            <input type="text" id="name" required placeholder="Enter Your Name">
+            <br>
+            <label for="author-detail">Author Education Detail <b>:-</b></label>
+            <input type="text" id="author-detail" required placeholder="Enter Education Background">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Content</b></legend>
+            <label for="content">Add Content <b>:-</b></label>
+            <input type="text" id="content" required placeholder="Enter Content...">
+            <br>
+            <label for="image">Upload an image or Video <b>:-</b></label>
+            <input type="file" id="image" name="image" accept="image/*">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Comment Section</b></legend>
+            <input type="text" placeholder="Enter Your Comment...">
+        </fieldset>
+        <button type="submit">Submit</button>
+    </fieldset>
+    </form>
+    <!-- <hr><hr>
+
+    <footer>
+        <div class="footer-content">
+            
+    
+            
+            <div class="message-container">
+                <h3>Send Us a Message</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <br>
+            <p>&copy; 2024 MY BLOG. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer> -->
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT_PAGE</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span>MY</span> BLOG</h1>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <a href="../index.html"><abbr title="HOME"><li><i class="fa-solid fa-house"></i> HOME</li></abbr></a>
+            <a href="../about/about.html"><abbr title="ABOUT"><li><i class="fas fa-info-circle"></i> ABOUT</li></abbr></a>
+            <a href="./contact.html"><abbr title="CONTACT"><li><i class="fas fa-envelope"></i> CONTACT</li></abbr></a>
+            <a href="../blogpost/blogpost.html"><abbr title="BLOG"><li><i class="fas fa-blog"></i> BLOG POST</li></abbr></a>
+            <a href="../project/project.html"><abbr title="PRODUCT"><li><i class="fas fa-box-open"></i> PROJECT</li></abbr></a>
+            <a href="../login/login.html"><abbr title="LOGIN"><li><i class="fas fa-sign-in-alt"></i> LOGIN</li></abbr></a>
+            <a href="../user/user.html"><abbr title="USER"><li><i class="fa-solid fa-users"></i> USER</li></abbr></a>
+        </ul>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <form>
+           <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required placeholder="Enter your full name"> 
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Enter your Email-Id">
+            
+            <label for="mob-num">Mobile No.</label>
+            <input type="number" id="mob-num" required placeholder="Enter your contact no.">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" required placeholder="Write your query..."></textarea>
+            
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </fieldset>
+        </form>
+
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('active');
+        }
+    </script>
+    </body>
+    </html>

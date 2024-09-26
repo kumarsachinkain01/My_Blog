@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG_WEBSITE</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span>MY</span> BLOG</h1>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <a href="../index.html"><abbr title="HOME"><li><i class="fa-solid fa-house"></i> HOME</li></abbr></a>
+            <a href="./about.html"><abbr title="ABOUT"><li><i class="fas fa-info-circle"></i> ABOUT</li></abbr></a>
+            <a href="../contact/contact.html"><abbr title="CONTACT"><li><i class="fas fa-envelope"></i> CONTACT</li></abbr></a>
+            <a href="../blogpost/blogpost.html"><abbr title="BLOG"><li><i class="fas fa-blog"></i> BLOG POST</li></abbr></a>
+            <a href=""><abbr title="PRODUCT"><li><i class="fas fa-box-open"></i> PROJECT</li></abbr></a>
+            <a href="../login/login.html"><abbr title="LOGIN"><li><i class="fas fa-sign-in-alt"></i> LOGIN</li></abbr></a>
+            <a href="../user/user.html"><abbr title="USER"><li><i class="fa-solid fa-users"></i> USER</li></abbr></a>
+        </ul>
+    </header>
+    <hr>
+    <main>
+        <h2>About the Author</h2>
+        <img src="../assets/author.JPG" alt="Author Picture">
+        <p>My name is Sachin Kumar, and I'm the creator of Sachin's Blog. I completed my Bachelor's degree from Dr. MPS College of Institute, where I developed a strong foundation in technology and programming. With a passion for coding, I've learned Java, GitHub, HTML, CSS, JavaScript, and Tailwind, which fuels my journey toward becoming a senior Full Stack Developer. Through this blog, I aim to share my insights, projects, and experiences in the world of web development. Join me as I explore new technologies and help others along the way!</p>
+    </main>
+      
+
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

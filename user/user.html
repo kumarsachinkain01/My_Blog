@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER_PROFILE</title>
+    <link rel="stylesheet" href="user.css">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span>MY</span> BLOG</h1>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <a href="../index.html"><abbr title="HOME"><li><i class="fa-solid fa-house"></i> HOME</li></abbr></a>
+            <a href="../about/about.html"><abbr title="ABOUT"><li><i class="fas fa-info-circle"></i> ABOUT</li></abbr></a>
+            <a href="../contact/contact.html"><abbr title="CONTACT"><li><i class="fas fa-envelope"></i> CONTACT</li></abbr></a>
+            <a href="../blogpost/blogpost.html"><abbr title="BLOG"><li><i class="fas fa-blog"></i> BLOG POST</li></abbr></a>
+            <a href=""><abbr title="PRODUCT"><li><i class="fas fa-box-open"></i> PROJECT</li></abbr></a>
+            <a href="../login/login.html"><abbr title="LOGIN"><li><i class="fas fa-sign-in-alt"></i> LOGIN</li></abbr></a>
+            <a href="../user/user.html"><abbr title="USER"><li><i class="fa-solid fa-users"></i> USER</li></abbr></a>
+        </ul>
+    </header> 
+
+    <div class="container">
+        <div class="image-section">
+            <img src="../assets/user_03.jpg" alt="user-image">
+        </div>
+        <div class="text-content">
+            <span>Sachin Kumar</span>
+            <span>Web Developer</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatem necessitatibus quae odio eum tenetur, beatae consectetur!</p>
+            <a href="../about/about.html"><button class="btn">Read more</button> </a>
+            <div class="social-icon">
+                <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+               <a href="https://www.linkedin.com/in/sachinkumarkain/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+               <a href="https://x.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                
+                <a href="https://www.facebook.com/login.php/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG_WEBSITE</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span>MY</span> BLOG</h1>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <a href="#"><abbr title="HOME"><li><i class="fa-solid fa-house"></i> HOME</li></abbr></a>
+            <a href="./about/about.html"><abbr title="ABOUT"><li><i class="fas fa-info-circle"></i> ABOUT</li></abbr></a>
+            <a href="./contact/contact.html"><abbr title="CONTACT"><li><i class="fas fa-envelope"></i> CONTACT</li></abbr></a>
+            <a href="./blogpost/blogpost.html"><abbr title="BLOG"><li><i class="fas fa-blog"></i> BLOG POST</li></abbr></a>
+            <a href="#"><abbr title="PRODUCT"><li><i class="fas fa-box-open"></i> PROJECT</li></abbr></a>
+            <a href="./login/login.html"><abbr title="LOGIN"><li><i class="fas fa-sign-in-alt"></i> LOGIN</li></abbr></a>
+            <a href="./user/user.html"><abbr title="USER"><li><i class="fa-solid fa-users"></i> USER</li></abbr></a>
+        </ul>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <img src="https://grras.com/images/courses-header-bg.jpg" alt="mernstack-banner">
+        <div class="banner-content">
+            <h2>Master The <span class="M">M</span> <span class="E">E</span> <span class="R">R</span> <span class="N">N</span> Stack</h2>
+            <pre class="marquee">Learn the power of MongoDB, Express.js, React.js, and Node.js. Stay updated with the latest in Full Stack Development...!</pre>
+        </div>
+    </section>
+
+    <!-- Feature Post Section -->
+    <section class="feature-post">
+        <h2>Feature Post</h2>
+        <div class="post">
+            <a href="https://medium.com/@saivinaykrishna/why-mern-stack-is-the-future-of-web-development-6987f17a5eac" target="_blank">
+                <img src="./assets/furure-post02.png" alt="Feature Post Image">
+            </a>
+            <h3 id="future-h3">Why MERN Stack is the Future of Web Development</h3>
+            <p id="future-para">The MERN Stack is gaining rapid popularity due to its full JavaScript framework that enables building powerful, dynamic web apps seamlessly.</p>
+            <a href="https://medium.com/@saivinaykrishna/why-mern-stack-is-the-future-of-web-development-6987f17a5eac" target="_blank" class="read-more">Read More</a>
+        </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section class="recent-posts">
+        <h2>Recent Posts</h2>
+        <div class="post-list">
+            <div class="post">
+                <h3>Understanding MongoDB: A NoSQL Database</h3>
+                <a href="./assets/1_JPRQZ8f62W1sf0v-0iFsOw.png" target="_blank">
+                    <img src="./assets/1_JPRQZ8f62W1sf0v-0iFsOw.png" alt="post-image">
+                </a>
+                <p>MongoDB is a document-based database that offers flexibility and scalability.</p>
+                <a href="https://www.mongodb.com/resources/basics/databases/nosql-explained" target="_blank" class="read-more">Read More</a>
+            </div>
+            <div class="post">
+                <h3>Building APIs with Express.js</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/f4oPDjYMdF4?si=9KAM4dMLRajrOvCS" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Express.js is a minimal framework for building backend APIs in Node.js.</p>
+                <a href="https://blog.postman.com/how-to-create-a-rest-api-with-node-js-and-express/" target="_blank" class="read-more">Read More</a>
+            </div>
+            <div class="post">
+                <h3>Why React is Dominating Frontend Development</h3>
+                <a href="#"><img src="./assets/react.jpg" alt=""></a>
+                <p><a href="https://react.dev/" target="_blank">React.js</a> offers a flexible and efficient way to build user interfaces.</p>
+                <a href="https://react.dev/" class="read-more" target="_blank">Read More</a>
+                <a href="./assets/30-days-of-react-ebook-fullstackio.pdf" target="_blank" id="download-link">Download PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advertisement Sidebar -->
+    <aside class="sidebar">
+        <div class="ad">
+            <a href="https://levi.in/collections/men" target="_blank">
+                <div class="ad-overlay">Amazing Deals</div>
+                <img src="./assets/ads-1.png" alt="Ad">
+            </a>
+        </div>
+
+        <div class="ad">
+            <a href="https://www.amazon.in/s?k=levis+jeans+and+shirt+formal+for+women+amazing+deal" target="_blank">
+                <div class="ad-overlay">Best Products</div>
+                <img src="./assets/ads-2.webp" alt="Ad">
+            </a>
+        </div>
+    </aside>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="message-container">
+                <h3>Send Us a Message</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <p>&copy; 2024 MY BLOG. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
